@@ -1,0 +1,9 @@
+echo '[FORMAT]
+good-names=i,j,ex,pk
+
+[MESSAGES CONTROL]
+disable=broad-except
+
+[MASTER]
+disable=C0114,
+' > .pylintrc
