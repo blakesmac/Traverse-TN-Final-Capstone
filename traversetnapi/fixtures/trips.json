@@ -1,0 +1,13 @@
+[
+    {
+        "model": "traversetnapi.trip",
+        "pk": 1,
+        "fields": {
+            "title": "Summer Trip",
+            "river": 1,
+            "place": 1,
+            "date": "2022-06-22",
+            "memberId": 1
+        }
+    }
+]
