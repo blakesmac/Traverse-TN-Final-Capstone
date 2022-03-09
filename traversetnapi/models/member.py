@@ -8,4 +8,8 @@ class Member(models.Model):
         max_length=150,
         default='none'
     )
+    name = models.CharField(
+        max_length=50,
+        default='none'
+    )
     

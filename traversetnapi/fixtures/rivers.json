@@ -1,0 +1,16 @@
+[
+    {
+        "model": "traversetnapi.river",
+        "pk": 1,
+        "fields":{
+            "title": "Elk River",
+            "address": "LynchBurg TN",
+            "fish": "Rainbow Trout, Brown Trout, Brook Trout",
+            "animals": "WhiteTail Deer, Beaver, Bald Eagle, Blue Heron",
+            "about": "",
+            "flowchart": "https://lakeinfo.tva.gov/htbin/genplots?guidecurve+50",
+            "visitors": 1
+
+        }
+    }
+]

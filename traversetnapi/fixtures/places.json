@@ -1,0 +1,12 @@
+[
+    {
+        "model": "traversetnapi.place",
+        "pk": 1,
+        "fields": {
+            "address": "Appalachian State Museum",
+            "wildlife": "Buffalo, Elk, Peackock, WhiteTail Deer",
+            "about": "The Museum of Appalachia is an amazong history experience in the mountains of Tennessee, there are many opportunities to enjoy the ature around, and visit the historical buildings on the property.",
+            "visitors": 1
+        }
+    }
+]

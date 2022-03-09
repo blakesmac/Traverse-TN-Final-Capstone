@@ -1,0 +1,11 @@
+[
+    {
+        "model": "traversetnapi.favorite",
+        "pk": 1,
+        "fields": {
+            "riverId": 1,
+            "placeId": 1,
+            "memberId": 1
+        }
+    }
+]
