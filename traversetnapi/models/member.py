@@ -6,10 +6,7 @@ class Member(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     about = models.CharField(
         max_length=150,
-        default='none'
+        null=True
     )
-    name = models.CharField(
-        max_length=50,
-        default='none'
-    )
+    
     

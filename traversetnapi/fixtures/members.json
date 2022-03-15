@@ -4,8 +4,7 @@
         "pk": 1,
         "fields": {
             "user": 1,
-            "about": "me",
-            "name": "Blake McAdams"
+            "about": "me"
         }
     }
 ]
