@@ -4,3 +4,4 @@ from .trip import TripView
 from .river import RiverView
 from .place import PlaceView
 from .favorite import FavoriteView
+from .member import MemberView

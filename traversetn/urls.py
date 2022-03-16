@@ -18,13 +18,14 @@ from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
 from traversetnapi.views import register_user, login_user
-from traversetnapi.views import (TripView, RiverView, PlaceView, FavoriteView) 
+from traversetnapi.views import (TripView, RiverView, PlaceView, FavoriteView, MemberView) 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'trips', TripView, 'trip')
 router.register(r'rivers', RiverView, 'river')
 router.register(r'places', PlaceView, 'place')
 router.register(r'favorites', FavoriteView, 'favorite')
+router.register(r'members', MemberView, 'member')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
