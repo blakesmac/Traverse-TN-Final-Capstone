@@ -8,9 +8,7 @@ class River(models.Model):
     animals = models.CharField(max_length=50)
     about = models.CharField(max_length=50)
     flowchart = models.CharField(max_length=50)
-    visitors = models.ForeignKey(
+    visitors = models.ManyToManyField(
         Member,
-        related_name="rivers",
-        null=True,
-        on_delete=models.CASCADE
+        related_name="rivers"
     )

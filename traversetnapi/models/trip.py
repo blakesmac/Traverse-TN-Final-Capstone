@@ -18,7 +18,7 @@ class Trip(models.Model):
         on_delete=models.SET_NULL
     )
     date = models.DateField(auto_now_add=True)
-    memberId = models.ForeignKey(
+    member = models.ForeignKey(
         Member,
         related_name="trips",
         null=True,
