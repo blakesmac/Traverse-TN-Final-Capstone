@@ -22,7 +22,11 @@ class TripView(ViewSet):
         trip.river = river
         trip.place = place
         trip.date = request.data["date"]
-        trip.memberId = member
+        trip.member = member
+        river.visitors.add(member)
+        river.save()
+        place.visitors.add(member)
+        place.save()
         
         try: 
             trip.save()
@@ -51,7 +55,7 @@ class TripView(ViewSet):
         trip.river = river
         trip.place = place
         trip.date = request.data["date"]
-        trip.memberId = member
+        trip.member = member
         trip.save()
         
         return Response({}, status=status.HTTP_204_NO_CONTENT)
@@ -103,13 +107,13 @@ class TripPlaceSerializer(serializers.ModelSerializer):
         fields = ['id','address', 'wildlife', 'about', 'visitors']
         
 class TripSerializer(serializers.ModelSerializer):
-    memberId = TripMemberSerializer(many=False)
+    member = TripMemberSerializer(many=False)
     river = TripRiverSerializer(many=False)
     place = TripPlaceSerializer(many=False)
     
     class Meta:
         model = Trip
-        fields = ('id', 'title', 'river', 'place', 'date', 'memberId')
+        fields = ('id', 'title', 'river', 'place', 'date', 'member')
         
         
         

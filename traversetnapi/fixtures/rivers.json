@@ -9,8 +9,23 @@
             "animals": "WhiteTail Deer, Beaver, Bald Eagle, Blue Heron",
             "about": "",
             "flowchart": "https://lakeinfo.tva.gov/htbin/genplots?guidecurve+50",
-            "visitors": 1
+            "visitors": [1]
+
+        }
+    },
+    {
+        "model": "traversetnapi.river",
+        "pk": 2,
+        "fields":{
+            "title": "Caney Fork River",
+            "address": "Cumberland County TN",
+            "fish": "Rainbow Trout, Brown Trout, Brook Trout, Striped Bass",
+            "animals": "WhiteTail Deer, Beaver, Bald Eagle, Blue Heron",
+            "about": "The caney fork river is a great family location",
+            "flowchart": "https://lakeinfo.tva.gov/htbin/genplots?guidecurve+50",
+            "visitors": [1]
 
         }
     }
+    
 ]

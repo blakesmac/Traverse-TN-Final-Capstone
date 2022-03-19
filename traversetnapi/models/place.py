@@ -14,9 +14,7 @@ class Place(models.Model):
         max_length=150,
         default='none'
     )
-    visitors = models.ForeignKey(
+    visitors = models.ManyToManyField(
         Member,
         related_name="places",
-        null=True,
-        on_delete=models.CASCADE
     )
