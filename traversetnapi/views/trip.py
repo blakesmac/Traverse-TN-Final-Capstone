@@ -1,5 +1,6 @@
 from django.core.exceptions import ValidationError
 from rest_framework import status
+from django.contrib.auth.models import User
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -83,6 +84,13 @@ class TripView(ViewSet):
         place = self.request.query_params.get('type', None)
         if place is not None:
             trips = trips.filter(place_id=place)
+        
+        member_token = self.request.query_params.get('member', None)
+        
+        if member_token is not None:
+            member = Member.objects.get(user = User.objects.get(auth_token=member_token))
+            
+            trips = Trip.objects.filter(user=member)
             
         serializer = TripSerializer(
             trips, many= True, context={'request': request})

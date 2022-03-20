@@ -5,7 +5,7 @@ from rest_framework.decorators import action
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from traversetnapi.models import Member
+from traversetnapi.models import Member, trip, Trip
 
 class MemberView(ViewSet):
     
@@ -16,6 +16,11 @@ class MemberView(ViewSet):
         member = MemberSerializer(
             member, many=False, context ={'request': request}
         )
+        
+        trip = self.request.query_params.get('type', None)
+        if trip is not None: 
+            member = member.filter(trip_id=trip)
+        
         
         profile = {}
         profile["member"] = member.data
@@ -30,6 +35,11 @@ class MemberView(ViewSet):
             return Response(serializer.data)
         except Exception as ex:
             return HttpResponseServerError(ex)
+        
+class MemberTripSerializer(serializers.ModelSerializer):
+    class Meta:
+        model: Trip 
+        fields = ('id', 'title', 'river', 'place', 'date', 'member')
         
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
