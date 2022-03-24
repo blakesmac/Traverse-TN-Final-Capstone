@@ -8,5 +8,55 @@
             "about": "The Museum of Appalachia is an amazong history experience in the mountains of Tennessee, there are many opportunities to enjoy the ature around, and visit the historical buildings on the property.",
             "visitors": [1]
         }
+    },
+    {
+        "model": "traversetnapi.place",
+        "pk": 2,
+        "fields": {
+            "address": "Ruby Falls",
+            "wildlife": "Black Bear, Bats, Cave Fish, troglobites",
+            "about": "Ruby Falls Tennesee is a gorgeous location with a variety of local wildife. A great family spot",
+            "visitors": [1]
+        }
+    },
+    {
+        "model": "traversetnapi.place",
+        "pk": 3,
+        "fields": {
+            "address": "Window Cliffs State Park",
+            "wildlife": "Whitetail Deer, Black Bear, Fox Squirrel",
+            "about": "Remote hiking for the not faint of heart!",
+            "visitors": [1]
+        }
+    },
+    {
+        "model": "traversetnapi.place",
+        "pk": 4,
+        "fields": {
+            "address": "Bell Witch Cave",
+            "wildlife": "Axolotyl, Blind Fish, Bats, Deer, Lizards",
+            "about": "Many believe that when the witch departed the family, she fled to the sanctuary of this cave. In the particular legend in which the cave is featured, young Betsy Bell and some of her friends had gone to explore the cave. While they were there, one of the boys crawled into a hole and became stuck.",
+            "visitors": [1]
+        }
+    },
+    {
+        "model": "traversetnapi.place",
+        "pk": 5,
+        "fields": {
+            "address": "Burgess Falls",
+            "wildlife": "Black Bear, Small fish, WhiteTail Deer, Bald Eagle",
+            "about": "Burgess falls holds some of the prettiest views and locations in the state of TN, a beautiful moderate hike for the entire family.",
+            "visitors": [1]
+        }
+    },
+    {
+        "model": "traversetnapi.place",
+        "pk": 6,
+        "fields": {
+            "address": "The Lost Sea Caverns",
+            "wildlife": "Giant mirror carp, giant Trout, Blind Fish",
+            "about": "THis experience will change your mind about caves! A guided tour with glass bottom boats to see the prehistoric creatures that lurk in the watery caverns.",
+            "visitors": [1]
+        }
     }
 ]

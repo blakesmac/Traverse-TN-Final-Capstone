@@ -7,7 +7,7 @@
             "address": "LynchBurg TN",
             "fish": "Rainbow Trout, Brown Trout, Brook Trout",
             "animals": "WhiteTail Deer, Beaver, Bald Eagle, Blue Heron",
-            "about": "This is a remote area with amazing wildlif, in a valley close to Jack Daniels Distillery.",
+            "about": "This is a remote area with amazing wildlife, in a valley close to Jack Daniels Distillery.",
             "flowchart": "https://lakeinfo.tva.gov/htbin/genplots?guidecurve+50",
             "visitors": [1]
 
@@ -22,7 +22,7 @@
             "fish": "Rainbow Trout, Brown Trout, Brook Trout, Striped Bass",
             "animals": "WhiteTail Deer, Beaver, Bald Eagle, Blue Heron",
             "about": "The caney fork river is a great family location",
-            "flowchart": "https://natwebsdww02.cr.usgs.gov/nwisweb/data/img/USGS.03424860.131022.00060..20220313.20220320.log.0.p50.gif",
+            "flowchart": "https://waterwatch.usgs.gov/wwapps/ftc.php?small=1&site_no=03424860",
             "visitors": [1]
 
         }
@@ -40,7 +40,50 @@
             "visitors": [1]
 
         }
+    },
+    {
+        "model": "traversetnapi.river",
+        "pk": 4,
+        "fields":{
+            "title": "Cumberland River",
+            "address": "Nashville TN",
+            "fish": "Smallmouth Bass, Largemouth Bass, Striped Bass, Drum, Carp",
+            "animals": "Beaver, Blue Heron, Whitetail Deer",
+            "about": "The Cumberland runs through the heart of Nashville, and is best known for its great Smallmouth Bass Fishing",
+            "flowchart": "https://water.weather.gov/resources/hydrographs/ckvt1_hg.png",
+            "visitors": [1]
+
+        }
+    },
+    {
+        "model": "traversetnapi.river",
+        "pk": 5,
+        "fields":{
+            "title": "Obey River",
+            "address": "Celina TN",
+            "fish": "Brook Trout, Rainbow Trout, Brown Trout, Drum, Carp",
+            "animals": "Beaver, Blue Heron, Otter, Bald Eagle",
+            "about": "The Obey is a popular location among residents of TN, becuase of its fish hatchery located at the headwaters, many people attend for its amazing beauty and great fishing.",
+            "flowchart": "https://waterwatch.usgs.gov/wwapps/ftc.php?small=1&site_no=03415000",
+            "visitors": [1]
+
+        }
+    },
+    {
+        "model": "traversetnapi.river",
+        "pk": 6,
+        "fields":{
+            "title": "Hiwassee River",
+            "address": "Reliance TN",
+            "fish": "Brook Trout, Rainbow Trout, Brown Trout, Smallmouth Bass, Largemouth Bass",
+            "animals": "Beaver, Blue Heron, Otter, Bald Eagle",
+            "about": "The Hiwassee river is known for its kayaking and heavy water flow, the rover provides great attraction to anyone who has heard of it, and produces some great rapids for kayaking as well.",
+            "flowchart": "https://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&site_no=03544970&parm_cd=00060&period=7",
+            "visitors": [1]
+
+        }
     }
+
 
     
 ]
